@@ -65,7 +65,7 @@
             <!-- VSL -->
             <div id="vid_62c9abd9c35abf000a0d4248" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_62c9abd9c35abf000a0d4248" src="https://images.converteai.net/b26db48d-bf04-4daf-9631-048ee2310518/players/62c9abd9c35abf000a0d4248/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_62c9abd9c35abf000a0d4248" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_62c9abd9c35abf000a0d4248">var s=document.createElement("script");s.src="https://scripts.converteai.net/b26db48d-bf04-4daf-9631-048ee2310518/players/62c9abd9c35abf000a0d4248/player.js",s.async=!0,document.head.appendChild(s);</script>
             <!-- Botão 1 -->
-            <div id="cta1" class="mt-4 d-none">
+            <div id="cta1" class="mt-4 esconder">
               <a href="https://pay.kiwify.com.br/TFKI7ft" class="a-btn" style="text-decoration: none;">
                 <span class="span-btn">QUIERO ACCESO!</span>
                 <span class="span-btn2">(Atención: plazas limitadas)</span>
@@ -442,8 +442,8 @@
               </div>
             </div>
             <!-- Botão 2 -->
-            <div id="cta2" class="mt-4 d-none">
-              <a href="https://pay.kiwify.com.br/TFKI7ft" class="a-btn" style="text-decoration: none;">
+            <div id="cta2" class="mt-4 esconder">
+              <a href="https://pay.kiwify.com.br/TFKI7ft" class="a-btn esconder" style="text-decoration: none;">
                 <span class="span-btn">QUIERO ACCESO!</span>
                 <span class="span-btn2">(Atención: plazas limitadas)</span>
               </a>
@@ -456,27 +456,12 @@
     <footer class="bg-dark py-3 text-center">
       <div class="text-white"><a href="termos.html" class="text-white">Termos de Uso</a> | <a href="privacidade.html" class="text-white">Política de Privacidade</a></div>
     </footer>
-
-    <script type="text/javascript">
-
-      const exibir_video = localStorage.getItem("exibir-video");
-     
-      if(exibir_video == 'true'){
-        document.getElementById("cta1").classList.remove("d-none");
-        document.getElementById("cta2").classList.remove("d-none");
-      }
-
-      setTimeout(() => {
-        document.getElementById("cta1").classList.remove("d-none");
-        document.getElementById("cta2").classList.remove("d-none");
-        localStorage.setItem('exibir-video','true');
-        }
-        , 66910); // temporização da Call to Action (em milissegundos)
-    </script>
-
+	<style>.esconder { display: none }</style>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="./assets-20220423T193029Z-001/assets/js/com.js"></script>
+	
+
   </body>
 </html>
