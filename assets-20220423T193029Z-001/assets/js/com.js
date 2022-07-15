@@ -1,5 +1,5 @@
 window.onload = function () {
-var SECONDS_TO_DISPLAY = 1338;
+var SECONDS_TO_DISPLAY = 1292;
 var CLASS_TO_DISPLAY = ".esconder";
 var attempts = 0;
 var elsHiddenList = [];
